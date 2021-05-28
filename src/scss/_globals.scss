@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	background-color: #eee;
+	font-family: $heading-font;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.heading {
+	font-family: $heading-font;
+}
+
+.text {
+	font-family: $text-font;
+}
