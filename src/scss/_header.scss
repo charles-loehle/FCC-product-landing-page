@@ -6,33 +6,53 @@ header {
 	flex-direction: column;
 	min-height: 75px;
 	padding: 0px 20px;
+	background: $secondary;
+	padding-bottom: 19px;
+
+	.logo {
+		width: auto;
+		margin-top: 15px;
+	}
+
+	nav ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+		padding: 0;
+
+		li {
+			padding: 0.3rem;
+		}
+	}
+	.fa-shopping-cart {
+		color: white;
+	}
 }
 
-.logo {
-	width: auto;
-	margin-top: 15px;
-}
-
-nav ul {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-direction: column;
+nav ul li a {
+	color: white;
 }
 
 @media (min-width: 769px) {
 	header {
 		flex-direction: row;
-	}
-	.logo {
-		width: 60%;
-		margin-top: 0;
-	}
+		padding: 0px 105px;
 
-	#nav-bar {
-		width: 35%;
-	}
-	nav ul {
-		flex-direction: row;
+		.logo {
+			width: 30%;
+			margin-top: 0;
+		}
+		#nav-bar {
+			flex-grow: 1;
+		}
+		nav ul {
+			flex-direction: row;
+		}
+
+		.header-shopping-cart {
+			flex-grow: 1;
+			text-align: end;
+		}
 	}
 }

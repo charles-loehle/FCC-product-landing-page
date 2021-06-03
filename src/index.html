@@ -5,28 +5,146 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Product Landing Page</title>
+		<script
+			src="https://kit.fontawesome.com/214921259b.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<header id="header">
 			<div class="logo">
-				<img src="../images/handbuilt-guitars-logo-longer-2.png" alt="" id="header-img" />
+				<img
+					src="../images/handbuilt-guitars-logo-longer-2-gold.png"
+					alt=""
+					id="header-img"
+				/>
 			</div>
-			<nav id="nav-bar"> 
+			<nav id="nav-bar">
 				<ul>
 					<li><a href="#features" class="navlink">Features</a></li>
 					<li><a href="#how-it-works" class="navlink">How It Works</a></li>
-					<li><a href="#pricing" class="navlink">Pricing</a></li></li>
-				</ul> 
+					<li><a href="#pricing" class="navlink">Pricing</a></li>
+				</ul>
 			</nav>
+			<div class="header-shopping-cart">
+				<a href="/"><i class="fas fa-shopping-cart"></i></a>
+			</div>
 		</header>
-		<section id="hero">
-			<h1 class="headline heading">Handcrafted Electric Guitars Constructed to Your Specifications</h1>
-			<p class="sub-headline text">Let us build the guitar of your dreams!</p>
-			<form action="" id="form">
-				<input id="email" type="email" placeholder="Enter your email address" required>
-				<input id="submit" type="submit" value="Get Started">
-			</form>
-		</section>
+
+		<div class="dark-overlay">
+			<section id="hero">
+				<img src="../images/hero-guitar-750-resized.png" alt="" />
+				<div class="hero-cta">
+					<h1 class="headline heading">Handcrafted Electric Guitars</h1>
+					<p class="sub-headline text">
+						Let us build the guitar of your dreams!
+					</p>
+
+					<form action="https://www.freecodecamp.com/email-submit" id="form">
+						<input
+							id="email"
+							type="email"
+							placeholder="Enter your email address"
+							required
+						/>
+						<input
+							class="btn btn-primary"
+							id="submit"
+							type="submit"
+							value="Get Started"
+						/>
+					</form>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section id="features">
+				<div class="flex">
+					<div class="materials">
+						<h2><i class="fas fa-fire"></i>Premium Materials</h2>
+						<p>
+							Contact us to discuss your guitar's ultimate building materials
+							and sizes
+						</p>
+					</div>
+					<div class="shipping">
+						<h2><i class="fas fa-shipping-fast"></i>Shipping</h2>
+						<p>Customers in 1000+ cities in over 40 countries</p>
+					</div>
+					<div class="materials">
+						<h2><i class="far fa-check-square"></i>Quality Assurance</h2>
+						<p>Contact us to discuss your custom guitar specs and needs</p>
+					</div>
+				</div>
+			</section>
+			<section id="how-it-works">
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/KdNTPYa8r9Q?controls=0"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</section>
+			<section id="pricing">
+				<div class="row flex-center-x">
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header center">
+								<h2>Solid body electric guitar</h2>
+							</div>
+							<div class="card-body">
+								<h3 class="card-title center">$1,500.00</h3>
+								<p class="card-sub-heading center">
+									The rock machine of your dreams with any number of strings and
+									pickups.
+								</p>
+								<a href="#" class="btn btn-primary w-100">Get Started</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header center">
+								<h2>Electric bass guitar</h2>
+							</div>
+							<div class="card-body">
+								<h3 class="card-title center">$1,500.00</h3>
+								<p class="card-sub-heading center">
+									Fretted or fretless basses for any scale length, string type
+									or number of strings.
+								</p>
+								<a href="#" class="btn btn-primary w-100">Get Started</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header center">
+								<h2>Hollow body electric guitar</h2>
+							</div>
+							<div class="card-body">
+								<h3 class="card-title center">$2,500.00</h3>
+								<p class="card-sub-heading center">
+									Arch top hollow body jazz box with painstakingly perfectly
+									fitted parts.
+								</p>
+								<a href="#" class="btn btn-primary w-100">Get Started</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br />
+			<br />
+			<br />
+			<footer id="footer">Copyright Handbuilt Guitars 2021</footer>
+		</div>
 		<script src="./index.js"></script>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
