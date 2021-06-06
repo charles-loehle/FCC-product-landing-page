@@ -12,11 +12,7 @@
 	color: #fff;
 	background-color: white;
 	padding-bottom: 25px;
-	// position: relative;
-
-	// img {
-	// 	max-height: 500px;
-	// }
+	margin-top: 210px;
 
 	.hero-cta {
 		color: black;
@@ -41,6 +37,12 @@
 @media (min-width: 750px) {
 	#hero {
 		height: 450px;
+	}
+}
+
+@media (min-width: 769px) {
+	#hero {
+		margin-top: 75px;
 	}
 }
 

@@ -8,6 +8,10 @@ header {
 	padding: 0px 20px;
 	background: $secondary;
 	padding-bottom: 19px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	top: 0;
 
 	.logo {
 		width: auto;
