@@ -343,8 +343,12 @@ template {
   box-sizing: border-box;
 }
 
+#page-wrapper {
+  position: relative;
+}
+
 body {
-  background-color: #eee;
+  background-color: #e2e3dd;
   font-family: "Lato", sans-serif;
 }
 
@@ -487,6 +491,10 @@ header {
   padding: 0px 20px;
   background: #292828;
   padding-bottom: 19px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
 }
 header .logo {
   width: auto;
@@ -543,6 +551,7 @@ nav ul li a {
   color: #fff;
   background-color: white;
   padding-bottom: 25px;
+  margin-top: 210px;
 }
 #hero .hero-cta {
   color: black;
@@ -556,6 +565,11 @@ nav ul li a {
 @media (min-width: 750px) {
   #hero {
     height: 450px;
+  }
+}
+@media (min-width: 769px) {
+  #hero {
+    margin-top: 75px;
   }
 }
 @media (min-width: 875px) {
