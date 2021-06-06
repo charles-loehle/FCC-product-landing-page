@@ -1,66 +1,47 @@
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 1rem;
-}
+#pricing {
+	margin-bottom: 120px;
 
-/* > selects immediate children */
-.row > * {
-	flex-shrink: 0;
-	width: 100%;
-	max-width: 100%;
-	padding-right: 8px;
-	padding-left: 8px;
-	margin-top: 1rem;
-}
+	.card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		word-wrap: break-word;
+		background-color: #fff;
+		background-clip: border-box;
+		border: 1px solid rgba(0, 0, 0, 0.125);
+		border-radius: 0.25rem;
 
-.card {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	min-width: 0;
-	word-wrap: break-word;
-	background-color: #fff;
-	background-clip: border-box;
-	border: 1px solid rgba(0, 0, 0, 0.125);
-	border-radius: 0.25rem;
-}
+		.card-header {
+			padding: 0.5rem 1rem;
+			margin-bottom: 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 
-.card-header {
-	padding: 0.5rem 1rem;
-	margin-bottom: 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
+			h2 {
+				font-size: 1rem;
+				color: #5b5b5b;
+				margin: 0.5rem;
+			}
+		}
 
-.card-header h2 {
-	font-size: 1rem;
-	color: #5b5b5b;
-	margin: 0.5rem;
-}
+		.card-body {
+			padding: 1rem 2rem;
 
-.card-sub-heading {
-	color: #a0a0a0;
-	font-size: 14px;
-	margin-top: 0;
-	padding: 0 1.2rem;
-	line-height: 1.5;
-}
+			.card-title {
+				margin-top: 0;
+				margin-bottom: 0.5rem;
+				font-size: 2.25rem;
+				font-weight: 400;
+				word-wrap: normal;
+			}
 
-.card-body {
-	padding: 1rem 2rem;
-}
-
-.card-title {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
-	font-size: 2.25rem;
-	font-weight: 400;
-	word-wrap: normal;
-}
-
-@media screen and (min-width: 768px) {
-	.col-md-4 {
-		flex: 0 0 auto;
-		width: 33.33%;
+			.card-sub-heading {
+				color: #a0a0a0;
+				font-size: 14px;
+				margin-top: 0;
+				padding: 0 1.2rem;
+				line-height: 1.5;
+			}
+		}
 	}
 }

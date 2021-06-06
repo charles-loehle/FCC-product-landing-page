@@ -35,6 +35,29 @@ a {
 	font-family: $text-font;
 }
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+/* > selects immediate children */
+.row > * {
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.col-md-4 {
+		flex: 0 0 auto;
+		width: 33.33%;
+	}
+}
+
 .flex-center-x {
 	justify-content: center;
 }
